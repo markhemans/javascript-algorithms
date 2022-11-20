@@ -18,7 +18,7 @@ Return the array ans.
         i++;
     }
     
-    return ans
+    return ans;
     
 };
 
