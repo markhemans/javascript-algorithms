@@ -7,15 +7,6 @@
  * @summary Bubble sort bubbles up the higest element one by one until the array is sorted. It starts with the first two elements and the window is repeated from the start and closes from the end. The time complexity of the above algorithm is O(n^2).   
  */
 
-
- function swap(arr,leftposition, rightposition)
- {
-     let temp = arr[leftposition];
-     arr[leftposition] = arr[rightposition];
-     arr[rightposition] = temp;
- }
-
-
 function bubbleSort(arr)
 {
     let leftposition;
@@ -27,7 +18,10 @@ function bubbleSort(arr)
         {
             if (arr[rightposition] > arr[rightposition+1])
             {
-                swap(arr,rightposition,rightposition+1);
+                // swap using temporary variable
+                let temp = arr[rightposition];
+                arr[rightposition] = arr[rightposition+1];
+                arr[rightposition+1] = temp;
             }
         }
 

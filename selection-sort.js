@@ -7,13 +7,6 @@
  * @summary Selection sort sorts an array by selecting the smallest item in the current array and swapping with the current position, adding one to the current position. It repeats until the last position is reached. The time complexity of the above algorithm is O(n).   
  */
 
-function swap(arr,leftposition, rightposition)
-{
-	let temp = arr[leftposition];
-	arr[leftposition] = arr[rightposition];
-	arr[rightposition] = temp;
-}
-
 function selectionSort(arr)
 {
 	
@@ -35,7 +28,10 @@ function selectionSort(arr)
             }  
 	    }
 
-        swap(arr,min_value_index, startingindex);
+        // swap using temporary variable
+		let temp = arr[min_value_index];
+		arr[min_value_index] = arr[startingindex];
+		arr[startingindex] = temp;
     }
 
 }
