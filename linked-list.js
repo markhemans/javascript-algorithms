@@ -64,19 +64,6 @@ function printLinkedList()
     printLinkedList();
 
  
-    
-
-
-
-
-
-
-
-
-
-
-
-
 // Additional functions
 
     /* add a new element to the end of the linked list */
