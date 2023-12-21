@@ -1,8 +1,8 @@
 let notBinary = /[^01]/;
 console.log(notBinary.test("1100100010100110"));
-console.log(notBinary.test("1100100010200110"));
+console.log(notBinary.test("110010001000110"));
 
-let match = /\d+/.exec("one two 100");
+let match = /\d+/.exec("one");
 console.log(match);
 
 let quotedText = /'([^']*)'/;
