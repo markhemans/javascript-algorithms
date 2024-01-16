@@ -12,7 +12,7 @@ A zero-based permutation nums is an array of distinct integers from 0 to nums.le
 var buildArray = function(nums) {
     
     var ans = [];
-    i=0;
+    i = 0;
     
     while (ans.length<=nums.length-1)
     {

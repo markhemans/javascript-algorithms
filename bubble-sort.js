@@ -18,7 +18,8 @@ function bubbleSort(arr)
         {
             if (arr[rightposition] > arr[rightposition+1])
             {
-                // swap using temporary variable
+                // we swap items here using a temporary variable
+                
                 let temp = arr[rightposition];
                 arr[rightposition] = arr[rightposition+1];
                 arr[rightposition+1] = temp;

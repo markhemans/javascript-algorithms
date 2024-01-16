@@ -138,5 +138,5 @@ insertDCNodeAfter(head.next, 3);
 printDCLinkedList();
 
 
-import {detectLoop} from "./tricks/floyds-algorithm.js"
+import {detectLoop} from "./additional-algorithms/floyds-algorithm.js"
 console.log(detectLoop(head));
