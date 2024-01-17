@@ -21,5 +21,3 @@ Return the array ans.
     return ans;
     
 };
-
-// problem i had was the size of length -1
